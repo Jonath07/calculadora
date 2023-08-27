@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <div class="calculadora">
+        <input type="text" id="pantalla" disabled>
+        <br>
+        <button onclick="reset()">AC</button>
+        <button onclick="aggPantalla('+/-')">+/-</button>
+        <button onclick="aggPantalla('%')">%</button>
+        <button class="ope" onclick="aggPantalla('/')">/</button>
+        <br>
+        <button onclick="aggPantalla('7')">7</button>
+        <button onclick="aggPantalla('8')">8</button>
+        <button onclick="aggPantalla('9')">9</button>
+        <button class="ope" onclick="aggPantalla('*')">*</button>
+        <br>
+        <button onclick="aggPantalla('4')">4</button>
+        <button onclick="aggPantalla('5')">5</button>
+        <button onclick="aggPantalla('6')">6</button>
+        <button class="ope" onclick="aggPantalla('-')">-</button>
+        <br>
+        <button onclick="aggPantalla('1')">1</button>
+        <button onclick="aggPantalla('2')">2</button>
+        <button onclick="aggPantalla('3')">3</button>
+        <button class="ope" onclick="aggPantalla('+')">+</button>
+        <br>
+        <button class="cero" onclick="aggPantalla('0')">0</button>
+        <button onclick="aggPantalla('.')">.</button>
+        <button class="ope" onclick="calcular()">=</button>
+    </div>
+</body>
+</html>
